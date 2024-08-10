@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --dark: rgba(36, 35, 35, 0.733);
+    --darker:  rgba(0, 0, 0, 0.932);
+    --yellow: rgba(230, 192, 26, 0.897);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: var(--darker);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: var(--dark);
+    box-shadow: 4px 2px 10px var(--dark);
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+input {
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 8px 12px 8px 12px;
+    width: 80%;
+
+}
+
+button {
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    padding: 8px 8px 8px 8px;
+    background: var(--yellow);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+p {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+/* media queary */
+
+@media  (max-width: 1024px) {
+    .calculator {
+        width: 50%;
+        height: 50%;
+    }
+ 
+    
+input {
+    width: 60%;
+}
+   
+}
+
+@media  (max-width: 890px) {
+    .calculator {
+        width: 50%;
+        height: 50%;
+    }
+ 
+    
+input {
+    width: 60%;
+}
+
+}
+
+@media  (max-width: 640px) {
+    .calculator {
+        width: 70%;
+        height:60%;
+    }
+ 
+    
+input {
+    width: 70%;
+}
+
+}
+
+
+@media  (max-width: 540px) {
+    .calculator {
+        width: 80%;
+        height: 60%;
+    }
+ 
+    
+input {
+    width: 60%;
+}
+
+p {
+    font-size: 18px;
+}
+
+}
+
+
+@media  (max-width: 470px) {
+   
+    h1 {
+        font-size: 38px;
+    }
+
+    .calculator {
+        width: 80%;
+        height: 60%;
+    }
+ 
+    
+    input {
+        width: 60%;
+    }
+
+    p {
+        padding-left: 15px;
+        font-size: 16px;
+    }
+
+}
