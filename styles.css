@@ -138,7 +138,7 @@ p {
 @media  (max-width: 470px) {
    
     h1 {
-        font-size: 38px;
+        font-size: 30px;
     }
 
     .calculator {
@@ -153,9 +153,13 @@ p {
         font-size: 18px;
     }
 
+    button {
+        font-size: 18px;
+    }
+    
     p {
         padding-left: 15px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
 }
